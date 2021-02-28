@@ -15,12 +15,15 @@ header {
   height: 60px;
   width: 280px;
   background-color: teal;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 nav {
   list-style: none;
   float: right;
   margin-right: 40px;
+  margin-top: 8px;
 }
 
 nav ul li {
@@ -30,6 +33,27 @@ nav ul li {
   padding-right: 10px;
   padding-left: 10px;
   margin: auto 3px;
+}
+
+
+#header-deco {
+  position: relative;
+}
+
+#header-deco img {
+  height: 160px;
+  width: 100%;
+}
+
+#header-deco h2 {
+  float: right;
+  background-color: teal;
+}
+
+.subtitle {
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
 }
 
 h1 {
@@ -44,31 +68,4 @@ h1 {
 
 h2 {
   font-size: 24px;
-}
-
-a {
-  color: #d21034;
-}
-
-.container {
-  width: 1024px;
-  margin: 0 auto;
-}
-
-#main-bio, #contact-info, #bio-image {
-  float: left;
-}
-
-#main-bio {
-  width: 70%;
-}
-
-#contact-info {
-  width: 30%;
-}
-
-#bio-image {
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
 }
