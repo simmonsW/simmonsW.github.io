@@ -102,11 +102,11 @@ nav ul li a {
 
 .section-title {
   display: flex;
-  border-right: 3px solid navy;
+  border-right: 3px solid turquoise;
   font-size: 32px;
   text-align: right;
   padding-right: 10px;
-  color: navy;
+  color: turquoise;
   margin: 0;
 }
 
@@ -145,18 +145,6 @@ nav ul li a {
   max-width: 1024px;
 }
 
-.example-info {
-  display: inline-block;
-  background-color: teal;
-  position: absolute;
-  align-self: flex-end;
-  bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  line-height: 0.5;
-  
-}
-
 .run-buddy {
   margin: auto 10px auto 10px;
   display: flex;
@@ -165,22 +153,24 @@ nav ul li a {
 .work-example {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   flex: 2 40%;
   margin: 5px 10px auto 10px;
 }
 
-.work-example img {
+.work-container img {
   border: 5px solid teal;
   max-height: 100%;
   max-width: 100%;
 }
 
-.run-buddy img {
-  border: 5px solid teal;
-  max-width: 100%;
-  max-height: 100%;
-
+.example-info {
+  display: inline-block;
+  background-color: teal;
+  position: absolute;
+  align-items: flex-end;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 0.5;
 }
 
 /*************
@@ -224,4 +214,37 @@ main section {
 
 .flex-title {
   display: flex;
+}
+
+/****************
+* MEDIA QUERIES *
+****************/
+
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+
+  header h1 {
+    padding-left: 10px;
+  }
+
+  #about-me p {
+    font-size: 28px;
+  }
+
+  .flex-title {
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .work-example {
+    flex: 1 100%;
+    flex-wrap: nowrap;
+  }
+
+  #contact-me h2 {
+    justify-content: center;
+  }
 }
