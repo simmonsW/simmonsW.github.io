@@ -2,8 +2,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: lightgray;
+  */
+  background-color: rgb(143, 143, 143);
 }
 
 /*********
@@ -100,23 +102,85 @@ nav ul li a {
 
 .section-title {
   display: flex;
-  justify-content: flex-start;
   border-right: 3px solid navy;
   font-size: 32px;
   text-align: right;
   padding-right: 10px;
   color: navy;
+  margin: 0;
 }
 
 /***********
 * ABOUT ME *
 ***********/
 
-#about-me p {
+.about-me-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+}
+
+.about-me-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#about-me p {
   padding-left: 20px;
+}
+
+/*******
+* WORK *
+*******/
+
+#work {
+  display: flex;
+}
+
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 1024px;
+}
+
+.example-info {
+  display: inline-block;
+  background-color: teal;
+  position: absolute;
+  align-self: flex-end;
+  bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 0.5;
+  
+}
+
+.run-buddy {
+  margin: auto 10px auto 10px;
+  display: flex;
+}
+
+.work-example {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 2 40%;
+  margin: 5px 10px auto 10px;
+}
+
+.work-example img {
+  border: 5px solid teal;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.run-buddy img {
+  border: 5px solid teal;
+  max-width: 100%;
+  max-height: 100%;
+
 }
 
 /*************
@@ -125,7 +189,6 @@ nav ul li a {
 
 #contact-me {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -143,7 +206,6 @@ nav ul li a {
   display: inline-block;
   padding-right: 10px;
   padding-left: 10px;
-  margin: auto 3px;
 }
 
 #contact-me ul li a {
@@ -152,14 +214,14 @@ nav ul li a {
 }
 
 main section {
-  padding: 60px;
+  padding: 20px 60px;
 }
 
 /************
 * UTILITIES *
 ************/
 
+
 .flex-title {
   display: flex;
-
 }
