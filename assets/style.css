@@ -230,13 +230,21 @@ main section {
   }
 
   #about-me p {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .flex-title {
-    flex: 1;
+    flex: 1 0 100%;
     justify-content: center;
     align-content: center;
+
+  }
+
+  .section-title {
+    border-right: none;
+    border-bottom: 3px solid turquoise;
+    text-align: center;
+    width: 100%;
   }
 
   .work-example {
@@ -246,5 +254,9 @@ main section {
 
   #contact-me h2 {
     justify-content: center;
+  }
+  
+  #contact-me ul {
+    width: 100%;
   }
 }
